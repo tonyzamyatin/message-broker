@@ -14,6 +14,7 @@ ___  ___                                ______           _
 This project is an implementation of a distributed message broker system with a DNS server, inspired by the Advanced Message Queuing Protocol (AMQP). The system enables asynchronous communication between clients by managing message exchanges and queues while supporting leader election for fault tolerance.
 
 ## Features
+![System Overview](https://github.com/tonyzamyatin/message-broker/blob/main/assets/message-broker-comic.png?raw=true)
 
 ### DNS Server
 - Implements a **Simple DNS Protocol (SDP)** to register, unregister, and resolve domain names.
@@ -91,6 +92,8 @@ You can test the components manually using **Netcat**:
 nc localhost 20000  # Connect to the Message Broker
 nc localhost 18000  # Connect to the DNS Server
 ```
+## Class Diagram
+![UML Diagram](https://github.com/tonyzamyatin/message-broker/blob/main/assets/message-broker-uml.png?raw=true)
 
 ## License
 This project is open-source and available under the MIT License.
